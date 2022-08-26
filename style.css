@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BE1D67;
+    color: white;
+    font-family: 'Anton';
+}
+
+#game {
+    background-color: #2D272D;
+    display: flex;
+    padding: 1.2em;
+    color: #8551AA;
+}
+
+.card {
+    color: #F5C190;
+    background-color: #1C11C0;
+    border-top: .5em solid rgb(63, 40, 157);
+    border-left: .5em solid rgb(41, 23, 113);
+    border-right: .5em solid #030302;
+    border-bottom: .5em solid rgb(151, 141, 192);
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    font-size: 3em;
+    line-height: 100px;
+}
+
+.first-button,
+.second-button {
+    background-color: rgb(84, 16, 146);
+    padding: .3em;
+    border: none;
+    border-radius: .5em;
+    margin: .3em;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    bottom: -70%;
+}
