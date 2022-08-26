@@ -88,16 +88,16 @@ function addCategory(category){
         // }
         switch (question.level) {
             case 'easy':
-               card.innerHTML = 100 
+               card.innerHTML = 100 + '$'
                 break;
          case 'medium':
-               card.innerHTML = 200 
+               card.innerHTML = 200 + '$'
                 break;
              case 'hard':
-               card.innerHTML = 300 
+               card.innerHTML = 300 + '$'
                 break;
                  case 'hardest':
-               card.innerHTML = 400 
+               card.innerHTML = 400 + '$'
                 break;
         }
         card.setAttribute('data-question', question.question)
