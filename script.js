@@ -64,16 +64,19 @@ function addCategory(category){
 
     const genreTitle = document.createElement('div');
     genreTitle.classList.add('genre-title');
-
+    
     genreTitle.innerHTML = category.genre;
-
+    
     column.appendChild(genreTitle)
     game.append(column);
-
+    
     category.questions.forEach(question => {
+        // const flipDisplay = document.createElement('div');
         const card = document.createElement('div');
+        card.classList.add('card-flip');
         card.classList.add('card');
         column.append(card);
+        
 
         // if (question.level === 'easy') {
         //     card.innerHTML = 100;
@@ -124,6 +127,7 @@ function flipCard() {
 
     const textDisplay = document.createElement('div');
     textDisplay.classList.add('card-text');
+
     textDisplay.innerHTML = this.getAttribute('data-question')
     const firstButton = document.createElement('button');
     const secondButton = document.createElement('button');
@@ -176,3 +180,5 @@ function getResult() {
     }
     cardOfButton.removeEventListener('click', flipCard);   
 }
+
+
